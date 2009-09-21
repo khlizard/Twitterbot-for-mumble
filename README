@@ -1,0 +1,21 @@
+= Twitterbot for mumble
+
+He tweets Mumble login/logout status on twitter.
+
+== Usage
+
+1. Change ID, Password and Murmur log path.
+     TwitterID = 'TwitterID'
+     TwitterPW = 'TwitterPW'
+     MurmurLogPath = '/etc/murmur/murmur.log'
+2. Setup clonetab.
+     * * * * *   /usr/local/bin/ruby /.../mumble.rb >/dev/null 2>&1
+
+== SPEC
+
+- The log that passes 24 hr is automatically deleted.
+
+== BUGS
+
+- Acquisition might uncommonly fail in the log. The cause is uncertain.
+
